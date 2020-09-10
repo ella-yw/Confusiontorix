@@ -1,0 +1,7 @@
+Generalized Model Metrics -->> 
+
+Accuracy Score: 0.608568646543
+
+Area Under the Receiver Operating Characteristics (AUROC): 0.609782046995
+
+Cohen's Kappa Co-efficient (K): 0.218703990371

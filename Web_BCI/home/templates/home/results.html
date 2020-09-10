@@ -1,0 +1,27 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Results</title>
+<link rel="shortcut icon" href="{% static 'home/logo.png' %}" type="image/x-icon">
+<link rel="icon" href="{% static 'home/logo.png' %}" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="{% static 'home/style2.css' %}">
+</head>
+
+<body class="main">
+<div class="divs" id="web_main" style="font-size:150px;margin-top:100px;">
+{% autoescape off %}
+	{{ output }}
+{% endautoescape %}
+</div>
+<div class="divs" id="web_all" style="font-size:45px;margin-top:50px;">
+{% autoescape off %}
+	{{ percentage }} Of The Time!
+{% endautoescape %}
+</div>                                                                     
+<br/><br/><br/>
+<input type="submit" name="predict" value="Download Newly Trained Model!" style="background-color:white;color:black;font-weight:bold" onclick="location.href = 'static/home/Model.hdf5';">
+</body>
+
+</html>
